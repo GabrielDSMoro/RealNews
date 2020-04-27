@@ -12,7 +12,7 @@ public class ConnectionFactory {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			System.out.println("Driver encontrado com sucesso!");
 		} catch (ClassNotFoundException ex) {
-			System.err.println("O driver n„o foi encontrado.");
+			System.err.println("O driver n√£o foi encontrado.");
 		}
 	}
 	
@@ -20,9 +20,9 @@ public class ConnectionFactory {
 		try {
 			return DriverManager
 					.getConnection("jdbc:mysql://localhost/portal_realnews", 
-							"root", "123465");
+							"root", "");
 		} catch (SQLException ex) {
-			System.err.println("N„o foi possÌvel conectar!");
+			System.err.println("N√£o foi poss√≠vel conectar!");
 			ex.printStackTrace();
 			return null;
 		}
