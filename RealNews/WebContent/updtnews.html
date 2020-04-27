@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Editar Notícia</title>
+</head>
+<body>
+<h1>Editar Notícia</h1>
+<p>Para editar a notícia, informe seu id.</p>
+
+<form action="EditarNoticia.do" method="post">
+Id da Notícia: <input type="number" name="id" required placeholder="Id"><br>
+Título da Notícia: <input type="text" name="title" required placeholder="Título"><br>
+Descrição: <input type="text" name="desc" required placeholder="Descrição"><br>
+Notícia: <textarea name="not" required placeholder="Notícia" rows="20" cols="100"></textarea><br>
+<button type="submit">Editar Notícia</button>
+<button type="reset">Limpar</button>
+<button onclick="window.location.href = 'menu.html'">Cancelar</button>
+</form>
+</body>
+</html>

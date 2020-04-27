@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Adicionar Notícia</title>
+</head>
+<body>
+<h1>Adicionar Notícia</h1>
+
+<form action="AdicionarNoticia.do" method="post">
+
+Título da Notícia: <input type="text" name="titulo" required placeholder="Título"> <br>
+Descrição da Notícia: <input type="text" name="desc" required placeholder="Descrição"><br>
+Notícia: <textarea rows=20 cols=100 name="not" required></textarea> <br>
+<br>
+<button type="submit">Adicionar Noticia</button>
+<button type="reset">Limpar</button>
+<button onclick="window.location.href = 'menu.html'">Cancelar</button>
+</form>
+</body>
+</html>
